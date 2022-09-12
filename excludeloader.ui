@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ExcludeLoader</class>
+ <widget class="QMainWindow" name="ExcludeLoader">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>640</width>
+    <height>480</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>640</width>
+    <height>480</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>640</width>
+    <height>480</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Exclude file processor</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background:rgb(212, 218, 236)</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QPushButton" name="Confirm">
+    <property name="geometry">
+     <rect>
+      <x>490</x>
+      <y>130</y>
+      <width>101</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+font:13pt &quot;Dubai&quot;;
+color:#4e526b;
+background-color:#f6f5ff;
+border-radius:10px;
+border-style:solid;
+border-width:2px;
+border-color:#8186b0;
+padding:5px;
+}
+
+QPushButton::hover{
+color:#ffffff;
+background-color:#9fa7e7;
+border-color:#8186b0;
+}
+
+QPushButton::pressed,QPushButton::checked{
+color:#ffffff;
+background-color:qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #9099d1, stop:1 #b0bbff)
+}
+</string>
+    </property>
+    <property name="text">
+     <string>Confirm</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="FilePath">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>80</y>
+      <width>541</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:rgb(255, 255, 255);
+font:13pt &quot;Dubai&quot;;
+border-radius:10px;
+border-style:solid;
+border-width:2px;
+border-color:#8186b0;</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Load">
+    <property name="geometry">
+     <rect>
+      <x>370</x>
+      <y>130</y>
+      <width>101</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+font:13pt &quot;Dubai&quot;;
+color:#4e526b;
+background-color:#f6f5ff;
+border-radius:10px;
+border-style:solid;
+border-width:2px;
+border-color:#8186b0;
+padding:5px;
+}
+
+QPushButton::hover{
+color:#ffffff;
+background-color:#9fa7e7;
+border-color:#8186b0;
+}
+
+QPushButton::pressed,QPushButton::checked{
+color:#ffffff;
+background-color:qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #9099d1, stop:1 #b0bbff)
+}
+</string>
+    </property>
+    <property name="text">
+     <string>Load</string>
+    </property>
+    <property name="checkable">
+     <bool>false</bool>
+    </property>
+    <property name="autoRepeat">
+     <bool>false</bool>
+    </property>
+    <property name="autoDefault">
+     <bool>false</bool>
+    </property>
+    <property name="default">
+     <bool>false</bool>
+    </property>
+    <property name="flat">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QWidget" name="ProgressBar" native="true">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>180</y>
+      <width>511</width>
+      <height>41</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="Percentage">
+    <property name="geometry">
+     <rect>
+      <x>550</x>
+      <y>180</y>
+      <width>51</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font:12pt &quot;Dubai&quot;;
+color:#4e526b;</string>
+    </property>
+    <property name="text">
+     <string>TextLabel</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>640</width>
+     <height>23</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

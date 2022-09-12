@@ -1,0 +1,2234 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="enabled">
+   <bool>true</bool>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1080</width>
+    <height>720</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1080</width>
+    <height>720</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1080</width>
+    <height>720</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Banira AI - v1.6.2</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>1080</width>
+     <height>720</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>1080</width>
+     <height>720</height>
+    </size>
+   </property>
+   <widget class="QTabWidget" name="tabWidget">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>1080</width>
+      <height>720</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>1080</width>
+      <height>720</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>1080</width>
+      <height>720</height>
+     </size>
+    </property>
+    <property name="sizeIncrement">
+     <size>
+      <width>0</width>
+      <height>0</height>
+     </size>
+    </property>
+    <property name="font">
+     <font>
+      <family>Dubai</family>
+      <pointsize>14</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+      <kerning>true</kerning>
+     </font>
+    </property>
+    <property name="tabletTracking">
+     <bool>false</bool>
+    </property>
+    <property name="toolTipDuration">
+     <number>-1</number>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QTabBar::tab{width:210}
+QTabBar::tab{height:144}
+QTabBar::tab{color:#2e313f}
+QTabBar::tab:selected{background:#929ae1}
+QTabBar::tab:hover{color:#ffffff}
+QTabBar::tab{background:#abbcec}
+
+
+
+
+
+QWidget{background:rgb(212, 218, 236)}
+QWidget{border:rgb(212, 218, 236)}</string>
+    </property>
+    <property name="tabPosition">
+     <enum>QTabWidget::West</enum>
+    </property>
+    <property name="tabShape">
+     <enum>QTabWidget::Rounded</enum>
+    </property>
+    <property name="currentIndex">
+     <number>3</number>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>16</width>
+      <height>16</height>
+     </size>
+    </property>
+    <property name="elideMode">
+     <enum>Qt::ElideNone</enum>
+    </property>
+    <property name="usesScrollButtons">
+     <bool>true</bool>
+    </property>
+    <property name="tabsClosable">
+     <bool>false</bool>
+    </property>
+    <property name="tabBarAutoHide">
+     <bool>false</bool>
+    </property>
+    <widget class="QWidget" name="ModSel">
+     <property name="layoutDirection">
+      <enum>Qt::LeftToRight</enum>
+     </property>
+     <attribute name="title">
+      <string>Model Selection</string>
+     </attribute>
+     <widget class="QRadioButton" name="Model1">
+      <property name="geometry">
+       <rect>
+        <x>70</x>
+        <y>70</y>
+        <width>251</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Dubai</family>
+        <pointsize>14</pointsize>
+        <weight>50</weight>
+        <italic>false</italic>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 14pt &quot;Dubai&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Seperate Channel Alex Net</string>
+      </property>
+      <property name="checkable">
+       <bool>true</bool>
+      </property>
+      <property name="checked">
+       <bool>true</bool>
+      </property>
+      <attribute name="buttonGroup">
+       <string notr="true">buttonGroup_2</string>
+      </attribute>
+     </widget>
+     <widget class="QRadioButton" name="Model1Opt1">
+      <property name="geometry">
+       <rect>
+        <x>90</x>
+        <y>110</y>
+        <width>321</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Dubai</family>
+        <pointsize>14</pointsize>
+        <weight>50</weight>
+        <italic>false</italic>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="contextMenuPolicy">
+       <enum>Qt::DefaultContextMenu</enum>
+      </property>
+      <property name="toolTip">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;self test with customized test ratio&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+      <property name="statusTip">
+       <string/>
+      </property>
+      <property name="whatsThis">
+       <string/>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 14pt &quot;Dubai&quot;;</string>
+      </property>
+      <property name="text">
+       <string>self to self</string>
+      </property>
+      <property name="checked">
+       <bool>true</bool>
+      </property>
+      <attribute name="buttonGroup">
+       <string notr="true">buttonGroup</string>
+      </attribute>
+     </widget>
+     <widget class="QRadioButton" name="Model1Opt2">
+      <property name="geometry">
+       <rect>
+        <x>90</x>
+        <y>150</y>
+        <width>381</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Dubai</family>
+        <pointsize>14</pointsize>
+        <weight>50</weight>
+        <italic>false</italic>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="toolTip">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;customize a test set and isolate the test set&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 14pt &quot;Dubai&quot;;</string>
+      </property>
+      <property name="text">
+       <string>other to self</string>
+      </property>
+      <attribute name="buttonGroup">
+       <string notr="true">buttonGroup</string>
+      </attribute>
+     </widget>
+     <widget class="QRadioButton" name="Model1Opt3">
+      <property name="geometry">
+       <rect>
+        <x>90</x>
+        <y>190</y>
+        <width>411</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Dubai</family>
+        <pointsize>14</pointsize>
+        <weight>50</weight>
+        <italic>false</italic>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="toolTip">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;customize a test set but not isolate the test set&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 14pt &quot;Dubai&quot;;
+</string>
+      </property>
+      <property name="text">
+       <string>all to self</string>
+      </property>
+      <attribute name="buttonGroup">
+       <string notr="true">buttonGroup</string>
+      </attribute>
+     </widget>
+     <widget class="QCheckBox" name="Model2Opt1">
+      <property name="geometry">
+       <rect>
+        <x>90</x>
+        <y>320</y>
+        <width>75</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Dubai</family>
+        <pointsize>12</pointsize>
+        <weight>50</weight>
+        <italic>false</italic>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 12pt &quot;Dubai&quot;;</string>
+      </property>
+      <property name="text">
+       <string>CheckBox</string>
+      </property>
+      <property name="checkable">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="Model2Opt3">
+      <property name="geometry">
+       <rect>
+        <x>310</x>
+        <y>320</y>
+        <width>75</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Dubai</family>
+        <pointsize>12</pointsize>
+        <weight>50</weight>
+        <italic>false</italic>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 12pt &quot;Dubai&quot;;</string>
+      </property>
+      <property name="text">
+       <string>CheckBox</string>
+      </property>
+      <property name="checkable">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="Model2">
+      <property name="geometry">
+       <rect>
+        <x>70</x>
+        <y>290</y>
+        <width>251</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Dubai</family>
+        <pointsize>13</pointsize>
+        <weight>50</weight>
+        <italic>false</italic>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 13pt &quot;Dubai&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Model 2</string>
+      </property>
+      <property name="checked">
+       <bool>false</bool>
+      </property>
+      <attribute name="buttonGroup">
+       <string notr="true">buttonGroup_2</string>
+      </attribute>
+     </widget>
+     <widget class="QCheckBox" name="Model2Opt2">
+      <property name="geometry">
+       <rect>
+        <x>200</x>
+        <y>320</y>
+        <width>75</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Dubai</family>
+        <pointsize>12</pointsize>
+        <weight>50</weight>
+        <italic>false</italic>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 12pt &quot;Dubai&quot;;</string>
+      </property>
+      <property name="text">
+       <string>CheckBox</string>
+      </property>
+      <property name="checkable">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="Lock">
+      <property name="geometry">
+       <rect>
+        <x>90</x>
+        <y>380</y>
+        <width>131</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+font: 13pt &quot;Dubai&quot;;
+color:#4e526b;
+background-color:#f6f5ff;
+border-radius:10px;
+border-style:solid;
+border-width:2px;
+border-color:#8186b0;
+padding:5px;
+}
+
+QPushButton::hover{
+color:#ffffff;
+background-color:#9fa7e7;
+border-color:#8186b0;
+}
+
+QPushButton::pressed, QPushButton::checked{
+setText:str(&quot;Continue&quot;);
+color:#ffffff;
+background-color:qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #9099d1, stop:1 #b0bbff)
+}
+
+</string>
+      </property>
+      <property name="text">
+       <string>Lock</string>
+      </property>
+      <property name="checkable">
+       <bool>true</bool>
+      </property>
+      <property name="autoRepeat">
+       <bool>false</bool>
+      </property>
+      <property name="autoDefault">
+       <bool>false</bool>
+      </property>
+      <property name="default">
+       <bool>false</bool>
+      </property>
+      <property name="flat">
+       <bool>false</bool>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="DataFit">
+     <attribute name="title">
+      <string>Data Fitting</string>
+     </attribute>
+     <widget class="QPushButton" name="Load">
+      <property name="geometry">
+       <rect>
+        <x>600</x>
+        <y>85</y>
+        <width>101</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+font:13pt &quot;Dubai&quot;;
+color:#4e526b;
+background-color:#f6f5ff;
+border-radius:10px;
+border-style:solid;
+border-width:2px;
+border-color:#8186b0;
+padding:5px;
+}
+
+QPushButton::hover{
+color:#ffffff;
+background-color:#9fa7e7;
+border-color:#8186b0;
+}
+
+QPushButton::pressed,QPushButton::checked{
+color:#ffffff;
+background-color:qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #9099d1, stop:1 #b0bbff)
+}
+</string>
+      </property>
+      <property name="text">
+       <string>Load</string>
+      </property>
+      <property name="checkable">
+       <bool>false</bool>
+      </property>
+      <property name="autoRepeat">
+       <bool>false</bool>
+      </property>
+      <property name="autoDefault">
+       <bool>false</bool>
+      </property>
+      <property name="default">
+       <bool>false</bool>
+      </property>
+      <property name="flat">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="Confirm">
+      <property name="geometry">
+       <rect>
+        <x>720</x>
+        <y>85</y>
+        <width>101</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+font:13pt &quot;Dubai&quot;;
+color:#4e526b;
+background-color:#f6f5ff;
+border-radius:10px;
+border-style:solid;
+border-width:2px;
+border-color:#8186b0;
+padding:5px;
+}
+
+QPushButton::hover{
+color:#ffffff;
+background-color:#9fa7e7;
+border-color:#8186b0;
+}
+
+QPushButton::pressed,QPushButton::checked{
+color:#ffffff;
+background-color:qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #9099d1, stop:1 #b0bbff)
+}
+</string>
+      </property>
+      <property name="text">
+       <string>Confirm</string>
+      </property>
+     </widget>
+     <widget class="QTextBrowser" name="DataLogBox">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>190</y>
+        <width>261</width>
+        <height>431</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:rgb(255, 255, 255);
+font:12pt &quot;Dubai&quot;;
+border-radius:10px;
+border-style:solid;
+border-width:2px;
+border-color:#8186b0;</string>
+      </property>
+      <property name="html">
+       <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Dubai'; font-size:12pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Logbox&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+     <widget class="QWidget" name="ProgressBar" native="true">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>130</y>
+        <width>751</width>
+        <height>41</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="FilePath">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>85</y>
+        <width>541</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:rgb(255, 255, 255);
+font:13pt &quot;Dubai&quot;;
+border-radius:10px;
+border-style:solid;
+border-width:2px;
+border-color:#8186b0;</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="Percentage">
+      <property name="geometry">
+       <rect>
+        <x>780</x>
+        <y>130</y>
+        <width>51</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font:12pt &quot;Dubai&quot;;
+color:#4e526b;</string>
+      </property>
+      <property name="text">
+       <string>TextLabel</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="TrainRatio">
+      <property name="geometry">
+       <rect>
+        <x>470</x>
+        <y>190</y>
+        <width>81</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:#ffffff;
+font:12pt &quot;Dubai&quot;;
+border-radius:10px;
+
+</string>
+      </property>
+      <property name="text">
+       <string>90</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="RatioLabel">
+      <property name="geometry">
+       <rect>
+        <x>330</x>
+        <y>190</y>
+        <width>141</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color:#4e526b;
+font:13pt &quot;Dubai&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Training set ratio:</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="RatioLabel2">
+      <property name="geometry">
+       <rect>
+        <x>560</x>
+        <y>190</y>
+        <width>51</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color:#4e526b;
+font:13pt &quot;Dubai&quot;;</string>
+      </property>
+      <property name="text">
+       <string>%</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="TestRatio">
+      <property name="geometry">
+       <rect>
+        <x>470</x>
+        <y>230</y>
+        <width>81</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:#ffffff;
+font: 12pt &quot;Dubai&quot;;
+border-radius:10px;
+</string>
+      </property>
+      <property name="text">
+       <string>10</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+      <property name="readOnly">
+       <bool>true</bool>
+      </property>
+      <property name="clearButtonEnabled">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="RatioLabel3">
+      <property name="geometry">
+       <rect>
+        <x>560</x>
+        <y>230</y>
+        <width>51</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color:#4e526b;
+font:13pt &quot;Dubai&quot;;</string>
+      </property>
+      <property name="text">
+       <string>%</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="Confirm2">
+      <property name="geometry">
+       <rect>
+        <x>600</x>
+        <y>190</y>
+        <width>101</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="layoutDirection">
+       <enum>Qt::LeftToRight</enum>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+font:13pt &quot;Dubai&quot;;
+color:#4e526b;
+background-color:#f6f5ff;
+border-radius:10px;
+border-style:solid;
+border-width:2px;
+border-color:#8186b0;
+padding:5px;
+}
+
+QPushButton::hover{
+color:#ffffff;
+background-color:#9fa7e7;
+border-color:#8186b0;
+}
+
+QPushButton::pressed,QPushButton::checked{
+color:#ffffff;
+background-color:qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #9099d1, stop:1 #b0bbff)
+}</string>
+      </property>
+      <property name="text">
+       <string>Confirm</string>
+      </property>
+      <property name="checkable">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QListWidget" name="TestCase">
+      <property name="geometry">
+       <rect>
+        <x>320</x>
+        <y>190</y>
+        <width>261</width>
+        <height>401</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QListWidget{font:12pt &quot;Dubai&quot;;
+color:#4e526b;
+background-color:#f6f5ff;
+border-radius:10px;
+border-style:solid;
+border-width:2px;
+border-color:#8186b0;
+padding:5px;
+alternate-background-color:beige;}
+
+QListWidget::item:selected {color:#ffffff;
+background-color:#9fa7e7;}
+QListWidget::item:hover {color:#ffffff;
+background-color:qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #9099d1, stop:1 #b0bbff);}</string>
+      </property>
+     </widget>
+     <widget class="QWidget" name="bgwidget3" native="true">
+      <property name="geometry">
+       <rect>
+        <x>320</x>
+        <y>190</y>
+        <width>261</width>
+        <height>431</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font:12pt &quot;Dubai&quot;;
+background-color:#8186b0;
+border-radius:10px;
+border-style:solid;
+border-width:2px;
+border-color:#8186b0;
+padding:5px;
+alternate-background-color:beige;</string>
+      </property>
+      <widget class="QLabel" name="TestCaseText">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>400</y>
+         <width>131</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color:#ffffff;
+font:13pt &quot;Dubai&quot;;</string>
+       </property>
+       <property name="text">
+        <string>Validation Case</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QLabel" name="Warning3">
+      <property name="geometry">
+       <rect>
+        <x>600</x>
+        <y>230</y>
+        <width>101</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font:11pt &quot;Dubai&quot;;
+color:#c86f63;</string>
+      </property>
+      <property name="text">
+       <string>Warning</string>
+      </property>
+      <property name="wordWrap">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="RatioLabel4">
+      <property name="geometry">
+       <rect>
+        <x>330</x>
+        <y>230</y>
+        <width>141</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color:#4e526b;
+font:13pt &quot;Dubai&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Test set ratio:</string>
+      </property>
+     </widget>
+     <widget class="QListWidget" name="TrainCase">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>190</y>
+        <width>261</width>
+        <height>401</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QListWidget{font:12pt &quot;Dubai&quot;;
+color:#4e526b;
+background-color:#f6f5ff;
+border-radius:10px;
+border-style:solid;
+border-width:2px;
+border-color:#8186b0;
+padding:5px;
+alternate-background-color:beige;}
+
+QListWidget::item:selected {color:#ffffff;
+background-color:#9fa7e7;}
+QListWidget::item:hover {color:#ffffff;
+background-color:qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #9099d1, stop:1 #b0bbff);}</string>
+      </property>
+     </widget>
+     <widget class="QWidget" name="bgwidget4" native="true">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>190</y>
+        <width>261</width>
+        <height>431</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font:12pt &quot;Dubai&quot;;
+background-color:#8186b0;
+border-radius:10px;
+border-style:solid;
+border-width:2px;
+border-color:#8186b0;
+padding:5px;
+alternate-background-color:beige;</string>
+      </property>
+      <widget class="QLabel" name="TrainCaseText">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>400</y>
+         <width>131</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color:#ffffff;
+font:13pt &quot;Dubai&quot;;</string>
+       </property>
+       <property name="text">
+        <string>Training Case</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QPushButton" name="Confirm3">
+      <property name="geometry">
+       <rect>
+        <x>600</x>
+        <y>190</y>
+        <width>101</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="layoutDirection">
+       <enum>Qt::LeftToRight</enum>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+font:13pt &quot;Dubai&quot;;
+color:#4e526b;
+background-color:#f6f5ff;
+border-radius:10px;
+border-style:solid;
+border-width:2px;
+border-color:#8186b0;
+padding:5px;
+}
+
+QPushButton::hover{
+color:#ffffff;
+background-color:#9fa7e7;
+border-color:#8186b0;
+}
+
+QPushButton::pressed,QPushButton::checked{
+color:#ffffff;
+background-color:qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #9099d1, stop:1 #b0bbff)
+}</string>
+      </property>
+      <property name="text">
+       <string>Confirm</string>
+      </property>
+      <property name="checkable">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <zorder>DataLogBox</zorder>
+     <zorder>bgwidget4</zorder>
+     <zorder>TrainCase</zorder>
+     <zorder>bgwidget3</zorder>
+     <zorder>ProgressBar</zorder>
+     <zorder>Percentage</zorder>
+     <zorder>Load</zorder>
+     <zorder>Confirm</zorder>
+     <zorder>FilePath</zorder>
+     <zorder>TestCase</zorder>
+     <zorder>Warning3</zorder>
+     <zorder>TrainRatio</zorder>
+     <zorder>RatioLabel</zorder>
+     <zorder>RatioLabel2</zorder>
+     <zorder>RatioLabel4</zorder>
+     <zorder>TestRatio</zorder>
+     <zorder>RatioLabel3</zorder>
+     <zorder>Confirm2</zorder>
+     <zorder>Confirm3</zorder>
+    </widget>
+    <widget class="QWidget" name="Training">
+     <attribute name="title">
+      <string>Training Process</string>
+     </attribute>
+     <widget class="QWidget" name="GraphWidget" native="true">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>150</y>
+        <width>781</width>
+        <height>401</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="Start">
+      <property name="geometry">
+       <rect>
+        <x>460</x>
+        <y>40</y>
+        <width>171</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+font:13pt &quot;Dubai&quot;;
+color:#4e526b;
+background-color:#f6f5ff;
+border-radius:10px;
+border-style:solid;
+border-width:2px;
+border-color:#8186b0;
+padding:5px;
+}
+
+QPushButton::hover{
+color:#ffffff;
+background-color:#9fa7e7;
+border-color:#8186b0;
+}
+
+QPushButton::pressed,QPushButton::checked{
+color:#ffffff;
+background-color:qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #9099d1, stop:1 #b0bbff)
+}
+
+</string>
+      </property>
+      <property name="text">
+       <string>Start</string>
+      </property>
+      <property name="checkable">
+       <bool>false</bool>
+      </property>
+      <property name="autoRepeat">
+       <bool>false</bool>
+      </property>
+      <property name="autoDefault">
+       <bool>false</bool>
+      </property>
+      <property name="default">
+       <bool>false</bool>
+      </property>
+      <property name="flat">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="Pause">
+      <property name="geometry">
+       <rect>
+        <x>650</x>
+        <y>40</y>
+        <width>171</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+font:13pt &quot;Dubai&quot;;
+color:#4e526b;
+background-color:#f6f5ff;
+border-radius:10px;
+border-style:solid;
+border-width:2px;
+border-color:#8186b0;
+padding:5px;
+}
+
+QPushButton::hover{
+color:#ffffff;
+background-color:#9fa7e7;
+border-color:#8186b0;
+}
+
+QPushButton::pressed, QPushButton::checked{
+setText:str(&quot;Continue&quot;);
+color:#ffffff;
+background-color:qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #9099d1, stop:1 #b0bbff)
+}
+
+</string>
+      </property>
+      <property name="text">
+       <string>Pause</string>
+      </property>
+      <property name="checkable">
+       <bool>true</bool>
+      </property>
+      <property name="autoRepeat">
+       <bool>false</bool>
+      </property>
+      <property name="autoDefault">
+       <bool>false</bool>
+      </property>
+      <property name="default">
+       <bool>false</bool>
+      </property>
+      <property name="flat">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="Stop">
+      <property name="geometry">
+       <rect>
+        <x>650</x>
+        <y>80</y>
+        <width>171</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+font:13pt &quot;Dubai&quot;;
+color:#4e526b;
+background-color:#f6f5ff;
+border-radius:10px;
+border-style:solid;
+border-width:2px;
+border-color:#8186b0;
+padding:5px;
+}
+
+QPushButton::hover{
+color:#ffffff;
+background-color:#9fa7e7;
+border-color:#8186b0;
+}
+
+QPushButton::pressed,QPushButton::checked{
+color:#ffffff;
+background-color:qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #9099d1, stop:1 #b0bbff)
+}
+
+</string>
+      </property>
+      <property name="text">
+       <string>Stop</string>
+      </property>
+      <property name="checkable">
+       <bool>false</bool>
+      </property>
+      <property name="autoRepeat">
+       <bool>false</bool>
+      </property>
+      <property name="autoDefault">
+       <bool>false</bool>
+      </property>
+      <property name="default">
+       <bool>false</bool>
+      </property>
+      <property name="flat">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="EpochValue">
+      <property name="geometry">
+       <rect>
+        <x>320</x>
+        <y>40</y>
+        <width>111</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:#ffffff;
+font: 12pt &quot;Dubai&quot;;
+border-radius:10px;
+
+</string>
+      </property>
+      <property name="text">
+       <string>800</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label">
+      <property name="geometry">
+       <rect>
+        <x>250</x>
+        <y>40</y>
+        <width>61</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font:13pt &quot;Dubai&quot;;
+color:#4e526b;</string>
+      </property>
+      <property name="text">
+       <string>Epoch:</string>
+      </property>
+     </widget>
+     <widget class="QTextBrowser" name="TrainingLogBox">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>570</y>
+        <width>771</width>
+        <height>101</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font:11pt &quot;Dubai&quot;;</string>
+      </property>
+      <property name="html">
+       <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Dubai'; font-size:11pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'MS UI Gothic'; font-size:9pt;&quot;&gt;TRAINING LOG&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="ProgressNoticer">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>110</y>
+        <width>291</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font:13pt &quot;Dubai&quot;;
+color:#c86f63;</string>
+      </property>
+      <property name="text">
+       <string>ProgressNoticer</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="ImpleNoticer">
+      <property name="geometry">
+       <rect>
+        <x>350</x>
+        <y>110</y>
+        <width>261</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font:13pt &quot;Dubai&quot;;
+color:#c86f63;</string>
+      </property>
+      <property name="text">
+       <string>ImplementationNoticer</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="Output">
+     <attribute name="title">
+      <string>Implementation</string>
+     </attribute>
+     <widget class="QPushButton" name="OutputConfirm">
+      <property name="geometry">
+       <rect>
+        <x>270</x>
+        <y>140</y>
+        <width>131</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="layoutDirection">
+       <enum>Qt::LeftToRight</enum>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+font:13pt &quot;Dubai&quot;;
+color:#4e526b;
+background-color:#f6f5ff;
+border-radius:10px;
+border-style:solid;
+border-width:2px;
+border-color:#8186b0;
+padding:5px;
+}
+
+QPushButton::hover{
+color:#ffffff;
+background-color:#9fa7e7;
+border-color:#8186b0;
+}
+
+QPushButton::pressed,QPushButton::checked{
+color:#ffffff;
+background-color:qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #9099d1, stop:1 #b0bbff)
+}</string>
+      </property>
+      <property name="text">
+       <string>Confirm</string>
+      </property>
+      <property name="checkable">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QListWidget" name="CaseOption">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>60</y>
+        <width>211</width>
+        <height>431</height>
+       </rect>
+      </property>
+      <property name="contextMenuPolicy">
+       <enum>Qt::DefaultContextMenu</enum>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QListWidget{font:12pt &quot;Dubai&quot;;
+color:#4e526b;
+background-color:#f6f5ff;
+border-radius:10px;
+border-style:solid;
+border-width:2px;
+border-color:#8186b0;
+padding:5px;
+alternate-background-color:beige;}
+
+QListWidget::item:selected {color:#ffffff;
+background-color:#9fa7e7;}
+QListWidget::item:hover {color:#ffffff;
+background-color:qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #9099d1, stop:1 #b0bbff);}</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="OutputLoad">
+      <property name="geometry">
+       <rect>
+        <x>270</x>
+        <y>100</y>
+        <width>131</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+font:13pt &quot;Dubai&quot;;
+color:#4e526b;
+background-color:#f6f5ff;
+border-radius:10px;
+border-style:solid;
+border-width:2px;
+border-color:#8186b0;
+padding:5px;
+}
+
+QPushButton::hover{
+color:#ffffff;
+background-color:#9fa7e7;
+border-color:#8186b0;
+}
+
+QPushButton::pressed,QPushButton::checked{
+color:#ffffff;
+background-color:qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #9099d1, stop:1 #b0bbff)
+}
+</string>
+      </property>
+      <property name="text">
+       <string>Load file</string>
+      </property>
+      <property name="checkable">
+       <bool>false</bool>
+      </property>
+      <property name="autoRepeat">
+       <bool>false</bool>
+      </property>
+      <property name="autoDefault">
+       <bool>false</bool>
+      </property>
+      <property name="default">
+       <bool>false</bool>
+      </property>
+      <property name="flat">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="OutputConfirm2">
+      <property name="geometry">
+       <rect>
+        <x>690</x>
+        <y>140</y>
+        <width>131</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="layoutDirection">
+       <enum>Qt::LeftToRight</enum>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+font:13pt &quot;Dubai&quot;;
+color:#4e526b;
+background-color:#f6f5ff;
+border-radius:10px;
+border-style:solid;
+border-width:2px;
+border-color:#8186b0;
+padding:5px;
+}
+
+QPushButton::hover{
+color:#ffffff;
+background-color:#9fa7e7;
+border-color:#8186b0;
+}
+
+QPushButton::pressed,QPushButton::checked{
+color:#ffffff;
+background-color:qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #9099d1, stop:1 #b0bbff)
+}</string>
+      </property>
+      <property name="text">
+       <string>Confirm</string>
+      </property>
+      <property name="checkable">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QListWidget" name="ModelOption">
+      <property name="geometry">
+       <rect>
+        <x>420</x>
+        <y>60</y>
+        <width>261</width>
+        <height>431</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QListWidget{font:12pt &quot;Dubai&quot;;
+color:#4e526b;
+background-color:#f6f5ff;
+border-radius:10px;
+border-style:solid;
+border-width:2px;
+border-color:#8186b0;
+padding:5px;
+alternate-background-color:beige;}
+
+QListWidget::item:selected {color:#ffffff;
+background-color:#9fa7e7;}
+QListWidget::item:hover {color:#ffffff;
+background-color:qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #9099d1, stop:1 #b0bbff);}</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="OutputLoad2">
+      <property name="geometry">
+       <rect>
+        <x>690</x>
+        <y>100</y>
+        <width>131</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+font:13pt &quot;Dubai&quot;;
+color:#4e526b;
+background-color:#f6f5ff;
+border-radius:10px;
+border-style:solid;
+border-width:2px;
+border-color:#8186b0;
+padding:5px;
+}
+
+QPushButton::hover{
+color:#ffffff;
+background-color:#9fa7e7;
+border-color:#8186b0;
+}
+
+QPushButton::pressed,QPushButton::checked{
+color:#ffffff;
+background-color:qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #9099d1, stop:1 #b0bbff)
+}
+</string>
+      </property>
+      <property name="text">
+       <string>Load file</string>
+      </property>
+      <property name="checkable">
+       <bool>false</bool>
+      </property>
+      <property name="autoRepeat">
+       <bool>false</bool>
+      </property>
+      <property name="autoDefault">
+       <bool>false</bool>
+      </property>
+      <property name="default">
+       <bool>false</bool>
+      </property>
+      <property name="flat">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QWidget" name="bgwidget" native="true">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>120</y>
+        <width>211</width>
+        <height>401</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font:12pt &quot;Dubai&quot;;
+background-color:#8186b0;
+border-radius:10px;
+border-style:solid;
+border-width:2px;
+border-color:#8186b0;
+padding:5px;
+alternate-background-color:beige;</string>
+      </property>
+      <widget class="QLabel" name="CaseText">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>370</y>
+         <width>91</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color:#ffffff;
+font:14pt &quot;Dubai&quot;;</string>
+       </property>
+       <property name="text">
+        <string>Case</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="bgwidget2" native="true">
+      <property name="geometry">
+       <rect>
+        <x>420</x>
+        <y>90</y>
+        <width>261</width>
+        <height>431</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font:12pt &quot;Dubai&quot;;
+background-color:#8186b0;
+border-radius:10px;
+border-style:solid;
+border-width:2px;
+border-color:#8186b0;
+padding:5px;
+alternate-background-color:beige;</string>
+      </property>
+      <widget class="QLabel" name="ModelText">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>400</y>
+         <width>91</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color:#ffffff;
+font:14pt &quot;Dubai&quot;;</string>
+       </property>
+       <property name="text">
+        <string>Model</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QPushButton" name="Compute">
+      <property name="geometry">
+       <rect>
+        <x>690</x>
+        <y>560</y>
+        <width>131</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+font:13pt &quot;Dubai&quot;;
+color:#4e526b;
+background-color:#f6f5ff;
+border-radius:10px;
+border-style:solid;
+border-width:2px;
+border-color:#8186b0;
+padding:5px;
+}
+
+QPushButton::hover{
+color:#ffffff;
+background-color:#9fa7e7;
+border-color:#8186b0;
+}
+
+QPushButton::pressed,QPushButton::checked{
+color:#ffffff;
+background-color:qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #9099d1, stop:1 #b0bbff)
+}
+</string>
+      </property>
+      <property name="text">
+       <string>Compute</string>
+      </property>
+      <property name="checkable">
+       <bool>false</bool>
+      </property>
+      <property name="autoRepeat">
+       <bool>false</bool>
+      </property>
+      <property name="autoDefault">
+       <bool>false</bool>
+      </property>
+      <property name="default">
+       <bool>false</bool>
+      </property>
+      <property name="flat">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="Warning">
+      <property name="geometry">
+       <rect>
+        <x>280</x>
+        <y>180</y>
+        <width>91</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font:11pt &quot;Dubai&quot;;
+color:#c86f63;</string>
+      </property>
+      <property name="text">
+       <string>Warning</string>
+      </property>
+      <property name="wordWrap">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="Warning2">
+      <property name="geometry">
+       <rect>
+        <x>700</x>
+        <y>180</y>
+        <width>101</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font:11pt &quot;Dubai&quot;;
+color:#c86f63;</string>
+      </property>
+      <property name="text">
+       <string>Warning</string>
+      </property>
+      <property name="wordWrap">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="Finished">
+      <property name="geometry">
+       <rect>
+        <x>710</x>
+        <y>600</y>
+        <width>101</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font:13pt &quot;Dubai&quot;;
+color:#c86f63;</string>
+      </property>
+      <property name="text">
+       <string>Finished</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="OutputLoad3">
+      <property name="geometry">
+       <rect>
+        <x>270</x>
+        <y>60</y>
+        <width>131</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+font:13pt &quot;Dubai&quot;;
+color:#4e526b;
+background-color:#f6f5ff;
+border-radius:10px;
+border-style:solid;
+border-width:2px;
+border-color:#8186b0;
+padding:5px;
+}
+
+QPushButton::hover{
+color:#ffffff;
+background-color:#9fa7e7;
+border-color:#8186b0;
+}
+
+QPushButton::pressed,QPushButton::checked{
+color:#ffffff;
+background-color:qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #9099d1, stop:1 #b0bbff)
+}
+</string>
+      </property>
+      <property name="text">
+       <string>Load folder</string>
+      </property>
+      <property name="checkable">
+       <bool>false</bool>
+      </property>
+      <property name="autoRepeat">
+       <bool>false</bool>
+      </property>
+      <property name="autoDefault">
+       <bool>false</bool>
+      </property>
+      <property name="default">
+       <bool>false</bool>
+      </property>
+      <property name="flat">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="OutputLoad4">
+      <property name="geometry">
+       <rect>
+        <x>690</x>
+        <y>60</y>
+        <width>131</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+font:13pt &quot;Dubai&quot;;
+color:#4e526b;
+background-color:#f6f5ff;
+border-radius:10px;
+border-style:solid;
+border-width:2px;
+border-color:#8186b0;
+padding:5px;
+}
+
+QPushButton::hover{
+color:#ffffff;
+background-color:#9fa7e7;
+border-color:#8186b0;
+}
+
+QPushButton::pressed,QPushButton::checked{
+color:#ffffff;
+background-color:qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #9099d1, stop:1 #b0bbff)
+}
+</string>
+      </property>
+      <property name="text">
+       <string>Load folder</string>
+      </property>
+      <property name="checkable">
+       <bool>false</bool>
+      </property>
+      <property name="autoRepeat">
+       <bool>false</bool>
+      </property>
+      <property name="autoDefault">
+       <bool>false</bool>
+      </property>
+      <property name="default">
+       <bool>false</bool>
+      </property>
+      <property name="flat">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <zorder>bgwidget2</zorder>
+     <zorder>bgwidget</zorder>
+     <zorder>OutputConfirm</zorder>
+     <zorder>CaseOption</zorder>
+     <zorder>OutputLoad</zorder>
+     <zorder>OutputConfirm2</zorder>
+     <zorder>ModelOption</zorder>
+     <zorder>OutputLoad2</zorder>
+     <zorder>Compute</zorder>
+     <zorder>Warning</zorder>
+     <zorder>Warning2</zorder>
+     <zorder>Finished</zorder>
+     <zorder>OutputLoad3</zorder>
+     <zorder>OutputLoad4</zorder>
+    </widget>
+    <widget class="QWidget" name="Visulization">
+     <property name="autoFillBackground">
+      <bool>false</bool>
+     </property>
+     <attribute name="title">
+      <string>Visualization</string>
+     </attribute>
+     <widget class="QPushButton" name="XYZ">
+      <property name="geometry">
+       <rect>
+        <x>670</x>
+        <y>50</y>
+        <width>151</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+font:13pt &quot;Dubai&quot;;
+color:#4e526b;
+background-color:#f6f5ff;
+border-radius:5px;
+border-style:solid;
+border-width:2px;
+border-color:#8186b0;
+padding:5px;
+}
+
+QPushButton::hover{
+color:#ffffff;
+background-color:#9fa7e7;
+border-color:#8186b0;
+}
+
+QPushButton::pressed,QPushButton::checked{
+color:#ffffff;
+background-color:qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #9099d1, stop:1 #b0bbff)
+}
+</string>
+      </property>
+      <property name="text">
+       <string>Axis</string>
+      </property>
+      <property name="checkable">
+       <bool>true</bool>
+      </property>
+      <property name="checked">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="Xview">
+      <property name="geometry">
+       <rect>
+        <x>670</x>
+        <y>80</y>
+        <width>151</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+font:13pt &quot;Dubai&quot;;
+color:#4e526b;
+background-color:#f6f5ff;
+border-radius:5px;
+border-style:solid;
+border-width:2px;
+border-color:#8186b0;
+padding:5px;
+}
+
+QPushButton::hover{
+color:#ffffff;
+background-color:#9fa7e7;
+border-color:#8186b0;
+}
+
+QPushButton::pressed,QPushButton::checked{
+color:#ffffff;
+background-color:qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #9099d1, stop:1 #b0bbff)
+}
+</string>
+      </property>
+      <property name="text">
+       <string>X View</string>
+      </property>
+      <property name="checkable">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="Set">
+      <property name="geometry">
+       <rect>
+        <x>670</x>
+        <y>270</y>
+        <width>151</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+font:13pt &quot;Dubai&quot;;
+color:#4e526b;
+background-color:#f6f5ff;
+border-radius:5px;
+border-style:solid;
+border-width:2px;
+border-color:#8186b0;
+padding:5px;
+}
+
+QPushButton::hover{
+color:#ffffff;
+background-color:#9fa7e7;
+border-color:#8186b0;
+}
+
+QPushButton::pressed,QPushButton::checked{
+color:#ffffff;
+background-color:qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #9099d1, stop:1 #b0bbff)
+}
+</string>
+      </property>
+      <property name="text">
+       <string>View Set</string>
+      </property>
+      <property name="checkable">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="Zview">
+      <property name="geometry">
+       <rect>
+        <x>670</x>
+        <y>140</y>
+        <width>151</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+font:13pt &quot;Dubai&quot;;
+color:#4e526b;
+background-color:#f6f5ff;
+border-radius:5px;
+border-style:solid;
+border-width:2px;
+border-color:#8186b0;
+padding:5px;
+}
+
+QPushButton::hover{
+color:#ffffff;
+background-color:#9fa7e7;
+border-color:#8186b0;
+}
+
+QPushButton::pressed,QPushButton::checked{
+color:#ffffff;
+background-color:qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #9099d1, stop:1 #b0bbff)
+}
+</string>
+      </property>
+      <property name="text">
+       <string>Z View</string>
+      </property>
+      <property name="checkable">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="Yview">
+      <property name="geometry">
+       <rect>
+        <x>670</x>
+        <y>110</y>
+        <width>151</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+font:13pt &quot;Dubai&quot;;
+color:#4e526b;
+background-color:#f6f5ff;
+border-radius:5px;
+border-style:solid;
+border-width:2px;
+border-color:#8186b0;
+padding:5px;
+}
+
+QPushButton::hover{
+color:#ffffff;
+background-color:#9fa7e7;
+border-color:#8186b0;
+}
+
+QPushButton::pressed,QPushButton::checked{
+color:#ffffff;
+background-color:qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #9099d1, stop:1 #b0bbff)
+}
+</string>
+      </property>
+      <property name="text">
+       <string>Y View</string>
+      </property>
+      <property name="checkable">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QOpenGLWidget" name="ViewPort">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>50</y>
+        <width>621</width>
+        <height>591</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QTextEdit" name="ViewIndex">
+      <property name="geometry">
+       <rect>
+        <x>670</x>
+        <y>170</y>
+        <width>151</width>
+        <height>101</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Dubai</family>
+        <pointsize>11</pointsize>
+        <weight>50</weight>
+        <italic>false</italic>
+        <bold>false</bold>
+        <kerning>false</kerning>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font:11pt &quot;Dubai&quot;;
+color:#4e526b;
+background-color:#f6f5ff;
+border-radius:5px;
+border-style:solid;
+border-width:2px;
+border-color:#8186b0;
+padding:5px;</string>
+      </property>
+     </widget>
+     <widget class="QTextBrowser" name="ViewPortLog">
+      <property name="geometry">
+       <rect>
+        <x>670</x>
+        <y>310</y>
+        <width>151</width>
+        <height>291</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font:11pt &quot;Dubai&quot;;</string>
+      </property>
+      <property name="html">
+       <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Dubai'; font-size:11pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'MS UI Gothic';&quot;&gt;Case name:&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'MS UI Gothic';&quot;&gt;Model implied:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="Copy">
+      <property name="geometry">
+       <rect>
+        <x>670</x>
+        <y>610</y>
+        <width>31</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Dubai</family>
+        <pointsize>13</pointsize>
+        <weight>50</weight>
+        <italic>false</italic>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+font:13pt &quot;Dubai&quot;;
+color:#4e526b;
+background-color:#f6f5ff;
+border-radius:5px;
+border-style:solid;
+border-width:2px;
+border-color:#8186b0;
+padding:5px;
+}
+
+QPushButton::hover{
+color:#ffffff;
+background-color:#9fa7e7;
+border-color:#8186b0;
+}
+
+QPushButton::pressed,QPushButton::checked{
+color:#ffffff;
+background-color:qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #9099d1, stop:1 #b0bbff)
+}
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>copy.png</normaloff>copy.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>20</width>
+        <height>20</height>
+       </size>
+      </property>
+      <property name="checkable">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="Save">
+      <property name="geometry">
+       <rect>
+        <x>700</x>
+        <y>610</y>
+        <width>31</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+font:13pt &quot;Dubai&quot;;
+color:#4e526b;
+background-color:#f6f5ff;
+border-radius:5px;
+border-style:solid;
+border-width:2px;
+border-color:#8186b0;
+padding:5px;
+}
+
+QPushButton::hover{
+color:#ffffff;
+background-color:#9fa7e7;
+border-color:#8186b0;
+}
+
+QPushButton::pressed,QPushButton::checked{
+color:#ffffff;
+background-color:qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #9099d1, stop:1 #b0bbff)
+}
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>save.png</normaloff>save.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>19</width>
+        <height>19</height>
+       </size>
+      </property>
+      <property name="checkable">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <zorder>ViewPortLog</zorder>
+     <zorder>ViewPort</zorder>
+     <zorder>Xview</zorder>
+     <zorder>Set</zorder>
+     <zorder>Zview</zorder>
+     <zorder>Yview</zorder>
+     <zorder>XYZ</zorder>
+     <zorder>ViewIndex</zorder>
+     <zorder>Copy</zorder>
+     <zorder>Save</zorder>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1080</width>
+     <height>23</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+ <buttongroups>
+  <buttongroup name="buttonGroup"/>
+  <buttongroup name="buttonGroup_2"/>
+ </buttongroups>
+</ui>
